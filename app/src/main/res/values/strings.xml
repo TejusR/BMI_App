@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BMI</string>
+    <string name="weight_kg">Weight (kg)</string>
+    <string name="height_m">Height (cm)</string>
+    <string name="submit">Submit</string>
+    <string name="thor_bmi">BMI of THOR</string>
+    <string name="bmi_is">Your BMI is... </string>
+    <string name="overweight">Overweight</string>
+    <string name="enter_thor_s_details">Enter Details of Thor</string>
+    <string name="thor_pic">Thor Pic</string>
+    <string name="hit_the_thor_s_hammer">Hit the Mjölnir to check BMI</string>
+</resources>

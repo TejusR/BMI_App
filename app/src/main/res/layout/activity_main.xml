@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="#212121"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="35sp"
+        android:id="@+id/Head"
+        android:text="@string/thor_bmi"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_thor_s_details"
+        android:layout_below="@+id/Head"
+        android:id="@+id/det"
+        android:gravity="center"
+        android:layout_marginBottom="15dp"
+        android:textSize="20sp"
+        android:textColor="@color/kindalightRed"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_below="@+id/det"
+        android:id="@+id/linlay"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/whitekinda"
+            android:id="@+id/weightt"
+            android:textColor="#FFFFFF"
+
+            android:textColorHighlight="@color/whitekinda"
+            android:autofillHints="@string/weight_kg"
+            android:layout_marginEnd="5dp"
+            android:hint="@string/weight_kg"
+            android:layout_weight="1"
+            android:backgroundTint="@color/whitekinda"
+            />
+
+        <EditText
+            android:id="@+id/heightt"
+
+            android:layout_marginEnd="10dp"
+            android:textColor="#FFFFFF"
+            android:autofillHints="@string/height_m"
+            android:inputType="numberDecimal"
+            android:layout_marginStart="5dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:hint="@string/height_m"
+            android:layout_weight="1"
+            android:textColorHint="@color/whitekinda"
+            android:backgroundTint="@color/whitekinda"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hitthor"
+        android:layout_below="@+id/linlay"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/hit_the_thor_s_hammer"
+        android:textColor="@color/kindalightRed"
+        android:textSize="18sp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/thor2"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/hitthor"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/thor_pic"
+        android:id="@+id/Sub"
+
+        android:onClick="calc"
+        />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/hitthor"
+    android:layout_marginTop="80dp"
+    android:textSize="20sp"
+    android:textColor="#FFFFFF"
+    android:text="Click below to reset values"
+    android:id="@+id/TEXTRESET"
+    />
+    <Button
+        android:layout_below="@+id/hitthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Another"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/RESET"
+        android:onClick="RESET"
+        android:layout_marginTop="120dp"
+        >
+    </Button>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/BMI"
+            android:text="@string/bmi_is"
+            android:textColor="@color/red"
+            android:textSize="35sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/verdict"
+            android:text="@string/overweight"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:textColor="@color/BlueText"
+            />
+    </LinearLayout>
+</RelativeLayout>
+
