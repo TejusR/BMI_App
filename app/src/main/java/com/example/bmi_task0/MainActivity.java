@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         TextReset.setVisibility(View.INVISIBLE);
         BMI.setVisibility(View.INVISIBLE);
         verdict.setVisibility(View.INVISIBLE);
+        Toast.makeText(getApplicationContext(),"Spider Sucks",Toast.LENGTH_SHORT).show();
 
     }
 
